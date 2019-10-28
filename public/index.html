@@ -4,16 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Welcome</title>
-
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/6.4.2/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/6.4.2/firebase-auth.js"></script>
-    <script defer src="/__/firebase/6.4.2/firebase-database.js"></script>
-    <script defer src="/__/firebase/6.4.2/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/6.4.2/firebase-storage.js"></script>
-    <!-- initialize the SDK after all desired features are loaded -->
-    <script defer src="/__/firebase/init.js"></script>
     
 
     <!-- Styles -->
@@ -48,17 +38,17 @@
         <div>
             <form>
                 <div class="form-group">
-                  <label for="email">Email address</label>
-                  <input type="email" class="form-control" id="email" placeholder="Enter email">
+                  <label for="emailLogin">Email address</label>
+                  <input type="emailLogin" class="form-control" id="emailLogin" placeholder="Enter email">
                 </div>
                 <div class="form-group">
-                  <label for="password">Password</label>
-                  <input type="password" class="form-control" id="password" placeholder="Password">
+                  <label for="passwordLogin">Password</label>
+                  <input type="password" class="form-control" id="passwordLogin" placeholder="Password">
                 </div>
             </form>
         </div>
         <div class="text-center">
-            <button type="button" class="btn btn-success" onclick="logIn(document. getElementById('email').value, document. getElementById('password').value)">Log In</button>
+            <button type="button" class="btn btn-success" onclick="logIn(document. getElementById('emailLogin').value, document. getElementById('passwordLogin').value)">Log In</button>
         </div>
       </div>
     </div>
@@ -70,26 +60,22 @@
         <div>
             <form>
                 <div class="form-group">
-                  <label for="email">Email address</label>
-                  <input type="email" class="form-control" id="email" placeholder="Enter email">
+                  <label for="emailRegister">Email address</label>
+                  <input type="emailRegister" class="form-control" id="emailRegister" placeholder="Enter email">
                 </div>
                 <div class="form-group">
-                  <label for="password">Password</label>
-                  <input type="password" class="form-control" id="password" placeholder="Password">
+                  <label for="passwordRegister">Password</label>
+                  <input type="password" class="form-control" id="passwordRegister" placeholder="Password">
                 </div>
             </form>
         </div>
         <div class="text-center">
-            <button type="button" class="btn btn-primary" onclick="register(document. getElementById('email').value, document. getElementById('password').value)">Register</button>
+            <button type="button" class="btn btn-primary" onclick="register(document.getElementById('emailRegister').value, document.getElementById('passwordRegister').value)">Register</button>
         </div>
       </div>
     </div>
   </div>
 </div>
-
-
-    
-   
 
     <script src="./scripts/functions.js"></script>
   </body>
